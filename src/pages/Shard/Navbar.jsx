@@ -48,7 +48,7 @@ const Navbar = () => {
                         user ? <>
                             <p>{user.displayName}</p>
                             <p className="ml-3">{user.photoURL}</p>
-                            <p>{user.email}</p>
+                            {/* <p>{user.email}</p> */}
                             <a onClick={handleSingIn} className="btn">SingOUt</a>
                         </>
                             : ""
