@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Service = ({ service }) => {
+    console.log(service)
     const { user } = useContext(AuthContext)
     const { title, images, short_des, price, id } = service
     return (
@@ -12,7 +13,7 @@ const Service = ({ service }) => {
                 <div className="card-body">
                     <h2 className="card-title">{title}</h2>
                     <p>{short_des}</p>
-                    <p>prices:{price}</p>
+                    <p className="font-bold text-2xl"><span className="text-info">$</span> {price}</p>
                     <img src="" alt="" />
                     <div className="card-actions justify-end">
                         <Link className="btn btn-info hover:bg-sky-700 hover:border-none  text-white  " to={`/cardDetails/${id}`}>Details</Link>

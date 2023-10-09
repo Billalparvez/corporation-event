@@ -7,14 +7,24 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     const { singInUser, googleUser } = useContext(AuthContext)
     const [passwordShow, setPasswordShow] = useState(false)
+    const [loginError, setLoginError] = useState('')
+
     const handleLogin = (e) => {
         e.preventDefault()
         const form = new FormData(e.currentTarget)
         const email = form.get("email");
         const password = form.get("password");
         const checkBox = e.target.box.checked;
-
+        setLoginError("")
         console.log(email, password)
+        // if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+        //     alert("Email NOt Match")
+        //     // return
+        // }
+        // else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+        //     toast.error("Password Not match")
+        //     return
+        // }
         if (!checkBox) {
             toast.error("Must be selected box")
             return
@@ -22,10 +32,12 @@ const Login = () => {
         singInUser(email, password)
             .then(res => {
                 console.log(res.user)
-                toast.success('Successfully toasted!');
+                toast.success('Your Login Successfull!')
             })
             .catch(error => {
                 console.log(error)
+                setLoginError(error.message)
+                // toast.error("No match")
             })
     }
     const handleGoogle = () => {
@@ -64,11 +76,6 @@ const Login = () => {
                                     <a href="#" className="text-info label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            {/* <div className='flex mt-3 justify-between items-center'>
-                                <label className="label">
-                                    <a href="#" className="text-info label-text-alt link link-hover">Forgot password?</a>
-                                </label>
-                            </div> */}
                             <p className='text-xl absolute top-[155px] right-12 ' onClick={() => setPasswordShow(!passwordShow)}>
                                 {passwordShow ? <AiFillEye></AiFillEye> : <AiFillEyeInvisible></AiFillEyeInvisible>}
                             </p>
@@ -88,7 +95,11 @@ const Login = () => {
                         </div>
                         <p className='text-center font-bold text-sm'>Don't Have An Account ?<Link className='text-sky-400' to={'/register'}> Register Now</Link></p>
                     </form>
-                    {/* <img src="https://i.postimg.cc/xCQRqDk8/80-cm-Vtb3-Rl-X3dvcmtpbmct-MDg.jpg" alt="" /> */}
+                    {
+                        loginError && <p className='text-red-500 font-bold'>{loginError}</p>
+
+                    }
+                   
                 </div>
                 <div>
                 </div>

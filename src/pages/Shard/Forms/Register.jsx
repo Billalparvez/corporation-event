@@ -8,6 +8,7 @@ import { AiOutlineGoogle, AiFillGithub } from 'react-icons/ai';
 const Register = () => {
     const { createUser, googleUser } = useContext(AuthContext)
     const [success, setSuccess] = useState("")
+    const [regError, setRegError] = useState("")
     const [passwordShow, setPasswordShow] = useState(false)
 
     const handleRegister = (e) => {
@@ -15,14 +16,9 @@ const Register = () => {
         const form = new FormData(e.currentTarget)
         const email = form.get("email");
         const password = form.get("password");
-        const boxs = e.target.box.checked
-        console.log(email, password)
-       
-        if (!boxs) {
-            toast.error("Must be filap check box")
-            return
-        }
-        else if (password.length < 6) {
+        console.log(email, password,)
+
+         if (password.length < 6) {
             toast.error("password must be 6 cherecter")
             return
         }
@@ -34,7 +30,8 @@ const Register = () => {
             toast.error("password must be special charecter")
             return
         }
-        // setSuccess("")
+        setRegError("")
+        setSuccess("")
         createUser(email, password)
             .then(res => {
                 console.log(res)
@@ -47,6 +44,7 @@ const Register = () => {
                 const errorCode = error.code;
                 const errorMessage = error.message
                 console.log(errorCode, errorMessage)
+                setRegError(errorMessage)
             })
     }
     const handleGoogle = () => {
@@ -89,10 +87,6 @@ const Register = () => {
                                 {passwordShow ? <AiFillEye></AiFillEye> : <AiFillEyeInvisible></AiFillEyeInvisible>}
                             </p>
                         </div>
-                        <div className="flex gap-3">
-                            <input type="checkbox" name="box" id="checkbox" />
-                            <label htmlFor="">Accept our <a href="">Terms and Condition</a></label>
-                        </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-info text-white rounded-3xl">Create an Account
                                 <Link to={"/"}></Link>
@@ -109,7 +103,10 @@ const Register = () => {
                         <p className='text-center font-bold text-sm'>Don't Have An Account ?<Link className='text-sky-400' to={'/login'}> Login</Link></p>
                     </form>
                     {/* <img src="https://i.postimg.cc/xCQRqDk8/80-cm-Vtb3-Rl-X3dvcmtpbmct-MDg.jpg" alt="" /> */}
-                    
+                    {
+                        regError && toast.error(regError)
+
+                    }
                 </div>
                 <div>
                 </div>

@@ -11,9 +11,9 @@ const Collection = () => {
             <Marquee pauseOnHover>
                 <div className="flex gap-3">
                     <div className="card w-full bg-base-100 shadow-xl text-center">
-                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/ZKMKXYB0/assortment-leaves-flowers-white-background.jpg" alt="Shoes" /></figure>
+                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/hPJz26Df/vintage-antique-reminder-down-wood.jpg" alt="Shoes" /></figure>
                         <div className="card-body border">
-                            <h2 className="card-title">Most Unique ProductA !!!</h2>
+                            <h2 className="card-title">Most Unique Product !!!</h2>
                             <p className="font-bold">prices: $ 200</p>
                             <div className="card-actions  justify-center">
                                 <Link className=" text-white btn btn-info" to={"/login"}>Buy Now</Link>
@@ -21,9 +21,9 @@ const Collection = () => {
                         </div>
                     </div>
                     <div className="card w-full bg-base-100 shadow-xl text-center">
-                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/ZKMKXYB0/assortment-leaves-flowers-white-background.jpg" alt="Shoes" /></figure>
+                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/Lss36vkf/smartwatch-screen-digital-device.jpg" alt="Shoes" /></figure>
                         <div className="card-body border">
-                            <h2 className="card-title">Most Unique ProductA !!!</h2>
+                            <h2 className="card-title">Most Unique Product !!!</h2>
                             <p className="font-bold">prices: $ 200</p>
                             <div className="card-actions  justify-center">
                                 <Link className=" text-white btn btn-info" to={"/login"}>Buy Now</Link>
@@ -31,19 +31,19 @@ const Collection = () => {
                         </div>
                     </div>
                     <div className="card w-full bg-base-100 shadow-xl text-center">
-                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/ZKMKXYB0/assortment-leaves-flowers-white-background.jpg" alt="Shoes" /></figure>
+                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/zGbmQw6z/gallery3.jpg" alt="Shoes" /></figure>
                         <div className="card-body border">
-                            <h2 className="card-title">Most Unique ProductA !!!</h2>
-                            <p className="font-bold">prices: $ 200</p>
+                            <h2 className="card-title">Most Unique Product !!!</h2>
+                            <p className="font-bold">price: $ 200</p>
                             <div className="card-actions  justify-center">
                                 <Link className=" text-white btn btn-info" to={"/login"}>Buy Now</Link>
                             </div>
                         </div>
                     </div>
                     <div className="card w-full bg-base-100 shadow-xl text-center">
-                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/ZKMKXYB0/assortment-leaves-flowers-white-background.jpg" alt="Shoes" /></figure>
+                        <figure><img className="h-64 w-80" src="https://i.postimg.cc/QtWHxWFh/time-management-poster-1284-13492.jpg" alt="Shoes" /></figure>
                         <div className="card-body border">
-                            <h2 className="card-title">Most Unique ProductA !!!</h2>
+                            <h2 className="card-title">Most Unique Product !!!</h2>
                             <p className="font-bold">prices: $ 200</p>
                             <div className="card-actions  justify-center">
                                 <Link className=" text-white btn btn-info" to={"/login"}>Buy Now</Link>

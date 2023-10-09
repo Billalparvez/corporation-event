@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Bannar = () => {
     return (
         <div className="">
-            <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.postimg.cc/Zqx0LwrD/Rectangle-1.png)' }}>
+            <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.postimg.cc/qBSHKSWQ/two-young-businessman-having-successful-meeting-restaurant.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className=" text-white max-w-3xl">

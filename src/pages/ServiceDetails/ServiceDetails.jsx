@@ -1,11 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import Left from "../Shard/Left";
-import Collection from "../Home/Collection";
-// import { useContext } from "react";
-// import { AuthContext } from "../../Provider/AuthProvider";
 
 const ServiceDetails = () => {
-    // const { user } = useContext(AuthContext)
+
     const datas = useLoaderData()
     const { id } = useParams()
     const parseId = parseInt(id)

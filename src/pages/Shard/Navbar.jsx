@@ -51,7 +51,6 @@ const Navbar = () => {
                             <a onClick={handleSingIn} className="btn">SingOUt</a>
                         </>
                             : ""
-                        // <Link to={'/login'}>Login</Link>
                     }
 
                 </div>

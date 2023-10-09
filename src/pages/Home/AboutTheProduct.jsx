@@ -9,25 +9,30 @@ const AboutTheProduct = () => {
                 <div className="md:col-span-2 ">
                     <p className="mb-5 text-3xl ">Marketing Agency WordPress theme.
                         You’ll be able to get all the other pages,
-                        blogroll and elements that you might <br /><br />
-                        using Blue theme. We’ve added the columned pages
+                        blogroll and elements that you might <br />
                         unlimited both full width and left-right columned</p>
 
-                    <div className='flex items-center gap-3 text-2xl'>
+                    <div className='flex items-center gap-3 text-2xl font-bold'>
                         <a className='text-sky-500' href=""> <GiSpotedFlower></GiSpotedFlower></a>
                         <p>Quad core 2.3GHz Processor</p>
                     </div>
-                    <div className='flex items-center gap-3 text-2xl'>
+                    <div className='flex items-center gap-3 text-2xl font-bold'>
                         <a className='text-sky-500' href=""> <GiSpotedFlower></GiSpotedFlower></a>
-                        <p>Quad core 2.3GHz Processor</p>
+                        <p>Smart listening experience by Adaptive Sound Control</p>
                     </div>
-                    <div className='flex items-center gap-3 text-2xl'>
+                    <div className='flex items-center gap-3 text-2xl font-bold'>
                         <a className='text-sky-500' href=""> <GiSpotedFlower></GiSpotedFlower></a>
-                        <p>Quad core 2.3GHz Processor</p>
+                        <p>Ergonomic, enfolding design earpads</p>
                     </div>
+                    <div className='flex items-center gap-3 text-2xl font-bold'>
+                        <a className='text-sky-500' href=""> <GiSpotedFlower></GiSpotedFlower></a>
+                        <p>Silver-coated oxygen-free copper</p>
+                    </div>
+                    
                 </div>
                 <div>
-                    <img className=" w-full rounded" src="https://i.postimg.cc/ZKMKXYB0/assortment-leaves-flowers-white-background.jpg" alt="Shoes" />
+                    <img className=" w-full " src="https://i.postimg.cc/ydnQPgf0/17017.jpg" alt="Shoes" />
+                    
                 </div>
             </div>
 
