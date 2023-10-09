@@ -22,7 +22,7 @@ const Navbar = () => {
         logout()
             .then()
             .catch()
-    }
+    } 
     return (
         <div className="" style={{ backgroundImage: 'urll(https://i.postimg.cc/Zqx0LwrD/Rectangle-1.png)' }}>
             <nav className="navbar   ">
@@ -41,6 +41,7 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         {navLinks}
                     </ul>
+                   
                 </div>
                 <div className="navbar-end">
                     {
