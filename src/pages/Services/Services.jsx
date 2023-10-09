@@ -11,7 +11,7 @@ const Services = () => {
     }, [])
     return (
         <div>
-            <div className="text-center max-w-3xl mx-auto my-10 space-y-3">
+            <div data-aos="fade-zoom-in" className="text-center max-w-3xl mx-auto my-10 space-y-3">
                 <h1 className="text-3xl font-bold" data-aos="fade-right">Our <span className="text-info">Services</span> </h1>
                 <p data-aos="fade-right" data-aos-anchor="#example-anchor"
                     data-aos-offset="500"

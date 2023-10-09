@@ -7,12 +7,12 @@ const Service = ({ service }) => {
     const { user } = useContext(AuthContext)
     const { title, images, short_des, price, id } = service
     return (
-        <div>
+        <div data-aos="flip-down" >
             <div  className="card w-full bg-base-100 shadow-xl">
             {/* <div data-aos="fade-down"></div> */}
                 <figure><img className="w-full h-72 " src={images} alt="Shoes" /></figure>
                 <div className="card-body ">
-                    <h2 className="card-title border-l-2 border-sky-500 mr-5">{title}</h2>
+                    <h2 className="card-title border-l-4 border-sky-500 "><span className="ml-3">{title}</span></h2>
                     <p>{short_des}</p>
                     <p className="font-bold text-2xl"><span className="text-info">$</span> {price}</p>
                     <img src="" alt="" />

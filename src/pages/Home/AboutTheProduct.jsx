@@ -3,7 +3,7 @@ import { GiSpotedFlower } from 'react-icons/gi';
 const AboutTheProduct = () => {
     return (
         <div className="my-32 ">
-            <h1 className="text-center text-3xl font-bold">Few Bright <span className='text-info'> Key Features</span><br />
+            <h1 className="text-center text-3xl font-bold" data-aos="fade-left ">Few Bright <span className='text-info'> Key Features</span><br />
                 About The Product</h1>
             <div className="grid md:grid-cols-3 gap-10 my-10 items-center" >
 

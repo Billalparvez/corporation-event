@@ -8,10 +8,10 @@ const Bannar = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className=" text-white max-w-3xl">
-                        <h1 className="mb-5 text-2xl md:text-4xl lg:text-5xl font-bold font_popis">Welcome To LaunchPage</h1>
+                        <h1  className="mb-5 text-2xl md:text-4xl lg:text-5xl font-bold font_popis">Welcome To LaunchPage</h1>
                         <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi   exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                            <input className="input rounded-3xl text-black mb-3 md:mb-0 lg:mb-0 " type="text" placeholder="Your Email " />
-                            <Link to={'/login'} className="btn bg-info border-none rounded-3xl ml-3  text-white  hover:bg-sky-500">Get Started</Link>
+                            <input  data-aos="fade-right" className="input rounded-3xl text-black mb-3 md:mb-0 lg:mb-0 " type="text" placeholder="Your Email " />
+                            <Link to={'/login'} data-aos="fade-left"  className="btn bg-info border-none rounded-3xl ml-3  text-white  hover:bg-sky-500">Get Started</Link>
                     </div>
                 </div>
             </div>

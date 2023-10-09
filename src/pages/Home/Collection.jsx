@@ -4,7 +4,7 @@ const Collection = () => {
     return (
         <div className="my-32 ">
             <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
-                <h1 className="text-3xl font-bold">See Our Another <br />
+                <h1 data-aos="flip-right" className="text-3xl font-bold">See Our Another <br />
                     <span className="text-info">Greatest </span>Collection</h1>
                 <p>Thanking to Blue, you can  both full width and left-right columned pages as you wish. One of the other major difference of this theme is to make you able to create unlimitless one page using different menu and different contents as well.</p>
             </div>

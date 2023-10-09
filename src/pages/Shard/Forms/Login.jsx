@@ -16,11 +16,11 @@ const Login = () => {
         const password = form.get("password");
         const checkBox = e.target.box.checked;
         setLoginError("")
-        console.log(email, password)
-        // if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
-        //     alert("Email NOt Match")
-        //     // return
-        // }
+        // console.log(email, password)
+        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+            alert("Email NOt Match")
+            // return
+        }
         // else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
         //     toast.error("Password Not match")
         //     return
