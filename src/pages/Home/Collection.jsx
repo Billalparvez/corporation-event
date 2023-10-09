@@ -8,7 +8,7 @@ const Collection = () => {
                     <span className="text-info">Greatest </span>Collection</h1>
                 <p>Thanking to Blue, you can  both full width and left-right columned pages as you wish. One of the other major difference of this theme is to make you able to create unlimitless one page using different menu and different contents as well.</p>
             </div>
-            <Marquee pauseOnHover>
+            <Marquee pauseOnClick>
                 <div className="flex gap-3">
                     <div className="card w-full bg-base-100 shadow-xl text-center">
                         <figure><img className="h-64 w-80" src="https://i.postimg.cc/hPJz26Df/vintage-antique-reminder-down-wood.jpg" alt="Shoes" /></figure>
