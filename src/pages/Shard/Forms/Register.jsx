@@ -17,8 +17,9 @@ const Register = () => {
         const email = form.get("email");
         const password = form.get("password");
         console.log(email, password,)
-
-         if (password.length < 6) {
+        setSuccess("")
+        setRegError("")
+        if (password.length < 6) {
             toast.error("password must be 6 cherecter")
             return
         }
@@ -30,8 +31,7 @@ const Register = () => {
             toast.error("password must be special charecter")
             return
         }
-        setRegError("")
-        setSuccess("")
+        
         createUser(email, password)
             .then(res => {
                 console.log(res)
@@ -102,7 +102,6 @@ const Register = () => {
                         </div>
                         <p className='text-center font-bold text-sm'>Don't Have An Account ?<Link className='text-sky-400' to={'/login'}> Login</Link></p>
                     </form>
-                    {/* <img src="https://i.postimg.cc/xCQRqDk8/80-cm-Vtb3-Rl-X3dvcmtpbmct-MDg.jpg" alt="" /> */}
                     {
                         regError && toast.error(regError)
 

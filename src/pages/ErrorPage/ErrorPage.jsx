@@ -2,8 +2,9 @@
 
 const ErrorPage = () => {
     return (
-        <div>
-            <h1>Oppppsssssss!!!!!!!!!</h1>
+        <div className="text-center text-3xl mt-52">
+            <h1>Oppppsssssss!!!!!!!!!</h1> <br />
+            <h1>Data NOt Found</h1>
         </div>
     );
 };

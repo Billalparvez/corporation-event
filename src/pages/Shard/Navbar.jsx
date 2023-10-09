@@ -14,7 +14,7 @@ const Navbar = () => {
             user ?
                 <>
                     <li><NavLink to={'/about'}>About</NavLink></li>
-                    <li><NavLink to={'/feathurs'}>Feathurs</NavLink></li>
+                    <li><NavLink to={'/features'}>Features</NavLink></li>
                 </> : ""
         }
     </>
@@ -45,8 +45,8 @@ const Navbar = () => {
                 <div className="navbar-end">
                     {
                         user ? <>
-                            {/* <p>{user.displayName}</p> */}
-                            {/* <p className="ml-3">{user.photoURL}</p> */}
+                            <p>{user.displayName}</p>
+                            <p className="ml-3">{user.photoURL}</p>
                             <p>{user.email}</p>
                             <a onClick={handleSingIn} className="btn">SingOUt</a>
                         </>
